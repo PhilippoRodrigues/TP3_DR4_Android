@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "807799513990",
+    "project_id": "tp3-dr4",
+    "storage_bucket": "tp3-dr4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807799513990:android:64fdb16a8f3bd6c6804207",
+        "android_client_info": {
+          "package_name": "com.philippo.tp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807799513990-mpnmpbcr9goq8jqe0rhip3d442h6l9fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxPmwWsyJroFC6vL_1lIDxXIXeM9l15GY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807799513990-mpnmpbcr9goq8jqe0rhip3d442h6l9fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/companyRegisterFragment"
+        android:name="com.philippo.tp3.ui.company.form.CompanyRegisterFragment"
+        android:label="company_register_fragment"
+        tools:layout="@layout/company_register_fragment" >
+        <action
+            android:id="@+id/action_companyRegisterFragment_to_evaluationFragment"
+            app:destination="@id/evaluationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/evaluationFragment"
+        android:name="com.philippo.tp3.ui.evaluation.EvaluationFragment"
+        android:label="evaluation_fragment"
+        tools:layout="@layout/evaluation_fragment" >
+        <action
+            android:id="@+id/action_evaluationFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.philippo.tp3.ui.score.ScoreFragment"
+        android:label="ScoreFragment"
+        tools:layout="@layout/score_fragment">
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_scoreFragment_to_listCompanyFragment"
+            app:destination="@id/listCompanyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listCompanyFragment"
+        android:name="com.philippo.tp3.ui.company.list.ListCompanyFragment"
+        android:label="list_company_fragment"
+        tools:layout="@layout/list_company_fragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.philippo.tp3.user.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_companyRegisterFragment"
+            app:destination="@id/companyRegisterFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userRegisterFragment"
+            app:destination="@id/userRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userRegisterFragment"
+        android:name="com.philippo.tp3.user.register.UserRegisterFragment"
+        android:label="user_register_fragment"
+        tools:layout="@layout/user_register_fragment" >
+        <action
+            android:id="@+id/action_userRegisterFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
